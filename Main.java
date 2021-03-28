@@ -5,12 +5,9 @@ import java.util.stream.Stream;
  * Main
  */
 public class Main {
-    public static void main(String[] args) {
-        System.out.println(opposite(12));
-    }
+    public static void main(String[] args){System.out.println(even_or_odd(5));}
 
-    public static int opposite(int number) {
-        return -number;
+    public static String even_or_odd(int number){
+        return  (Math.floorMod(number, 2) == 0) ? "Even" : "Odd";
     }
-
 }
