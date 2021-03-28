@@ -6,18 +6,11 @@ import java.util.stream.Stream;
  */
 public class Main {
     public static void main(String[] args) {
-        
-System.out.println(sum(new int[]{-1,2,3}));
+        System.out.println(opposite(12));
     }
 
-    public static int sum(int [] arr) {
-        int sum =0;
-        for (int i : arr) {
-            if (i > 0) {
-                sum += i;
-            } 
-        }
-        return sum;
+    public static int opposite(int number) {
+        return -number;
     }
-   
+
 }
