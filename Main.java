@@ -5,9 +5,17 @@ import java.util.stream.Stream;
  * Main
  */
 public class Main {
-    public static void main(String[] args){System.out.println(even_or_odd(6));}
+    public static void main(String[] args) {
+        System.out.println(sum(new int[] { 1, 2, 3, 4, 5 }));
+    }
 
-    public static String even_or_odd(int number){
-        return number % 2 == 0 ? "Even" : "Odd";
+    public static int sum(int[] arr) {
+        int res = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > 0) {
+                res += arr[i];
+            }
+        }
+        return res;
     }
 }
