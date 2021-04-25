@@ -1,15 +1,14 @@
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println(betterThanAverage(new int[] { 1, 2, }, 5));
+        System.out.println(repeatStr(4, "a"));
     }
 
-    public static boolean betterThanAverage(int[] classPoints, int yourPoints) {
-        int sum = 0, average, classPointsLength = classPoints.length;
-        for (int number : classPoints) {
-            sum+=number;
+    public static String repeatStr(final int repeat, final String string) {
+        String stringRepeated ="";
+        for (int i = 0; i < repeat; i++) {
+            stringRepeated+=string;
         }
-        average = sum/classPointsLength;
-        return average < yourPoints;
+        return stringRepeated;
     }
-
 }
