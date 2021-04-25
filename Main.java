@@ -1,12 +1,15 @@
-/**
- * Main
- */
 public class Main {
     public static void main(String[] args) {
-        System.out.println(makeNegative(-12));
+        System.out.println(betterThanAverage(new int[] { 1, 2, }, 5));
     }
 
-    public static int makeNegative(final int x) {
-        return Math.negateExact(Math.abs(x));
-}
+    public static boolean betterThanAverage(int[] classPoints, int yourPoints) {
+        int sum = 0, average, classPointsLength = classPoints.length;
+        for (int number : classPoints) {
+            sum+=number;
+        }
+        average = sum/classPointsLength;
+        return average < yourPoints;
+    }
+
 }
